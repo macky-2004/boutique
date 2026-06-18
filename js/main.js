@@ -11,16 +11,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const body = document.body;
 
   if (navToggle) {
+    function toggleBodyLock(force) {
+      body.classList.toggle('nav-open', force);
+    }
+
     navToggle.addEventListener('click', () => {
       nav.classList.toggle('open');
       navToggle.classList.toggle('active');
+      toggleBodyLock(nav.classList.contains('open'));
     });
 
-    // Close nav on link click (mobile)
+    // Close nav on link click (mobile) — skip dropdown toggle links
     document.querySelectorAll('.nav > a, .dropdown-menu a').forEach(link => {
       link.addEventListener('click', () => {
+        if (link.parentElement && link.parentElement.classList.contains('dropdown')) return;
         nav.classList.remove('open');
         navToggle.classList.remove('active');
+        toggleBodyLock(false);
       });
     });
   }
