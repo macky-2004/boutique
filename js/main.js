@@ -21,26 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleBodyLock(nav.classList.contains('open'));
     });
 
-    // Close nav on link click (mobile) — skip dropdown toggle links
-    document.querySelectorAll('.nav > a, .dropdown-menu a').forEach(link => {
+    // Close nav on link click (mobile)
+    document.querySelectorAll('.nav > a').forEach(link => {
       link.addEventListener('click', () => {
-        if (link.parentElement && link.parentElement.classList.contains('dropdown')) return;
         nav.classList.remove('open');
         navToggle.classList.remove('active');
         toggleBodyLock(false);
       });
     });
   }
-
-  // --- Dropdown toggle on mobile ---
-  document.querySelectorAll('.dropdown > a').forEach(dropdownLink => {
-    dropdownLink.addEventListener('click', (e) => {
-      if (window.innerWidth <= 820) {
-        e.preventDefault();
-        dropdownLink.parentElement.classList.toggle('open');
-      }
-    });
-  });
 
   // --- Header scroll effect ---
   const header = document.querySelector('.header');
