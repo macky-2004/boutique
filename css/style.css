@@ -109,30 +109,50 @@ ul { list-style: none; }
 /* --- Luxury Section Backgrounds --- */
 .section-alt {
   background: var(--color-bg-alt);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'%3E%3Cpath d='M150 0 C130 25 115 55 110 85 C105 115 108 135 112 150' fill='none' stroke='%23C9A96E' stroke-width='0.6' opacity='0.12'/%3E%3Cpath d='M110 85 C100 72 102 56 110 46' fill='none' stroke='%23C9A96E' stroke-width='0.4' opacity='0.08'/%3E%3Ccircle cx='112' cy='150' r='2.5' fill='none' stroke='%23C9A96E' stroke-width='0.3' opacity='0.1'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: clamp(100px, 15vw, 180px);
 }
 .section-alt::before, .section-alt::after {
   opacity: 1;
 }
 .section-cream {
   background: var(--color-bg-cream);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'%3E%3Cpath d='M0 0 C20 25 35 55 40 85 C45 115 42 135 38 150' fill='none' stroke='%23C9A96E' stroke-width='0.6' opacity='0.12'/%3E%3Cpath d='M40 85 C50 72 48 56 40 46' fill='none' stroke='%23C9A96E' stroke-width='0.4' opacity='0.08'/%3E%3Ccircle cx='38' cy='150' r='2.5' fill='none' stroke='%23C9A96E' stroke-width='0.3' opacity='0.1'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: clamp(100px, 15vw, 180px);
 }
 .section-cream::before, .section-cream::after {
   opacity: 1;
 }
 .section-warm {
   background: var(--color-bg-warm);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'%3E%3Cpath d='M150 0 C130 25 115 55 110 85 C105 115 108 135 112 150' fill='none' stroke='%23C9A96E' stroke-width='0.6' opacity='0.12'/%3E%3Cpath d='M110 85 C100 72 102 56 110 46' fill='none' stroke='%23C9A96E' stroke-width='0.4' opacity='0.08'/%3E%3Ccircle cx='112' cy='150' r='2.5' fill='none' stroke='%23C9A96E' stroke-width='0.3' opacity='0.1'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: clamp(100px, 15vw, 180px);
 }
 .section-warm::before, .section-warm::after {
   opacity: 1;
 }
 .section-subtle {
   background: var(--color-bg-subtle);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'%3E%3Cpath d='M150 0 C130 25 115 55 110 85 C105 115 108 135 112 150' fill='none' stroke='%23C9A96E' stroke-width='0.6' opacity='0.12'/%3E%3Cpath d='M110 85 C100 72 102 56 110 46' fill='none' stroke='%23C9A96E' stroke-width='0.4' opacity='0.08'/%3E%3Ccircle cx='112' cy='150' r='2.5' fill='none' stroke='%23C9A96E' stroke-width='0.3' opacity='0.1'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: clamp(100px, 15vw, 180px);
 }
 .section-subtle::before, .section-subtle::after {
   opacity: 1;
 }
 .section-champagne {
   background: var(--color-bg-champagne);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'%3E%3Cpath d='M0 0 C20 25 35 55 40 85 C45 115 42 135 38 150' fill='none' stroke='%23C9A96E' stroke-width='0.6' opacity='0.12'/%3E%3Cpath d='M40 85 C50 72 48 56 40 46' fill='none' stroke='%23C9A96E' stroke-width='0.4' opacity='0.08'/%3E%3Ccircle cx='38' cy='150' r='2.5' fill='none' stroke='%23C9A96E' stroke-width='0.3' opacity='0.1'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: clamp(100px, 15vw, 180px);
 }
 .section-champagne::before, .section-champagne::after {
   opacity: 1;
@@ -142,6 +162,10 @@ ul { list-style: none; }
 }
 .section-linen {
   background: var(--color-bg-linen);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'%3E%3Cpath d='M0 150 C20 125 35 95 40 65 C45 35 42 15 38 0' fill='none' stroke='%23C9A96E' stroke-width='0.6' opacity='0.12'/%3E%3Cpath d='M40 65 C50 78 48 94 40 104' fill='none' stroke='%23C9A96E' stroke-width='0.4' opacity='0.08'/%3E%3Ccircle cx='38' cy='0' r='2.5' fill='none' stroke='%23C9A96E' stroke-width='0.3' opacity='0.1'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: clamp(100px, 15vw, 180px);
 }
 .section-linen::before, .section-linen::after {
   opacity: 1;
@@ -685,8 +709,12 @@ body.nav-open { overflow: hidden; }
   overflow: hidden;
   background: var(--color-bg-champagne);
   background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'%3E%3Cpath d='M0 0 C20 25 35 55 40 85 C45 115 42 135 38 150' fill='none' stroke='%23C9A96E' stroke-width='0.6' opacity='0.12'/%3E%3Cpath d='M40 85 C50 72 48 56 40 46' fill='none' stroke='%23C9A96E' stroke-width='0.4' opacity='0.08'/%3E%3Ccircle cx='38' cy='150' r='2.5' fill='none' stroke='%23C9A96E' stroke-width='0.3' opacity='0.1'/%3E%3C/svg%3E"),
     radial-gradient(ellipse at 30% 40%, rgba(201,169,110,0.06) 0%, transparent 60%),
     radial-gradient(ellipse at 70% 60%, rgba(107,58,42,0.04) 0%, transparent 50%);
+  background-position: top left, 0 0, 0 0;
+  background-repeat: no-repeat;
+  background-size: clamp(100px, 15vw, 180px), auto, auto;
   position: relative;
 }
 .testimonial-section::before {
@@ -870,9 +898,13 @@ body.nav-open { overflow: hidden; }
   overflow: hidden;
   background: var(--color-secondary);
   background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 30'%3E%3Cpath d='M0 30 L12 10 L28 25 L44 5 L60 20 L80 8 L100 20 L116 5 L132 25 L148 10 L160 30' fill='none' stroke='%23E8D5A3' stroke-width='0.4' opacity='0.08'/%3E%3Ccircle cx='80' cy='30' r='1.5' fill='%23E8D5A3' opacity='0.06'/%3E%3C/svg%3E"),
     radial-gradient(ellipse at 20% 20%, rgba(201,169,110,0.10) 0%, transparent 50%),
     radial-gradient(ellipse at 80% 80%, rgba(201,169,110,0.06) 0%, transparent 40%),
     radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.03) 0%, transparent 60%);
+  background-position: top center, 0 0, 0 0, 0 0;
+  background-repeat: no-repeat;
+  background-size: contain, auto, auto, auto;
 }
 @media (max-width: 480px) {
   .page-banner { padding: calc(var(--header-h) + 24px) 0 28px; }
